@@ -3,5 +3,33 @@ body
 	/* Background pattern from Toptal Subtle Patterns */
 	background-image: url("img/grey_wash_wall.png");
 	font-size: 20px;
-	color: #fff;
+	color: #f2f2f2;
+	font-family: 'Dosis', sans-serif;
+}
+
+a:link    { color: #f2f2f2; text-decoration: none; }
+a:visited { color: #f2f2f2; }
+a:active  { color: #f2f2f2; }
+a:hover   { color: #f2f2f2; }
+
+header
+{
+	font-family: 'Lobster', cursive;
+	display: block;
+	text-align: center;
+}
+
+header > h1
+{
+	font-size: 50px;
+	letter-spacing: 4px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+header > p
+{
+	letter-spacing: 1px;
+	margin-top: 5px;
+	font-size: 25px;
 }
