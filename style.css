@@ -14,10 +14,10 @@ body
 	margin-right: auto;
 }
 
-a:link    { color: #f2f2f2; text-decoration: none; }
-a:visited { color: #f2f2f2; }
-a:active  { color: #f2f2f2; }
-a:hover   { color: #f2f2f2; }
+a:link    { color: #efefef; text-decoration: none; }
+a:visited { color: #efefef; }
+a:active  { color: #efefef; }
+a:hover   { color: #0d0d0d; }
 
 header
 {
@@ -38,5 +38,70 @@ header > p
 {
 	letter-spacing: 1px;
 	margin-top: 5px;
+	font-size: 25px;
+}
+
+.login_register
+{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+input[type=text],
+input[type=password]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+.description
+{
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.description ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.description ul > li
+{
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+strong
+{
+	letter-spacing: 2px;
 	font-size: 25px;
 }
