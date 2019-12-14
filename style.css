@@ -7,6 +7,13 @@ body
 	font-family: 'Dosis', sans-serif;
 }
 
+.container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 a:link    { color: #f2f2f2; text-decoration: none; }
 a:visited { color: #f2f2f2; }
 a:active  { color: #f2f2f2; }
