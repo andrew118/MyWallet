@@ -26,12 +26,12 @@
 		</header>
 		
 		<div class="login_register">
-			<form>
-				<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
+			<form action="register.php" method="post">
+				<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" name="login">
 				
-				<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+				<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" name="password">
 				
-				<input type="email" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'">
+				<input type="email" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" name="e-mail">
 				
 				<input type="submit" value="Zarejestruj się">
 			</form>
