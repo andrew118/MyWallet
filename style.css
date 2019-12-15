@@ -14,10 +14,10 @@ body
 	margin-right: auto;
 }
 
-a:link    { color: #efefef; text-decoration: none; }
-a:visited { color: #efefef; }
-a:active  { color: #efefef; }
-a:hover   { color: #3d3d3d; }
+a.motto:link    { color: #efefef; text-decoration: none; }
+a.motto:visited { color: #efefef; }
+a.motto:active  { color: #efefef; }
+a.motto:hover   { color: #3d3d3d; }
 
 header
 {
@@ -39,6 +39,7 @@ header > p
 	letter-spacing: 1px;
 	margin-top: 5px;
 	font-size: 25px;
+	font-style: italic;
 }
 
 .login_register
@@ -46,8 +47,8 @@ header > p
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 input[type=text],
