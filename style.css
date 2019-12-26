@@ -154,6 +154,7 @@ nav
 	background-color: #525252;
 	text-align: center;
 	border-radius: 5px;
+	height: 40px;
 }
 
 ol
@@ -166,10 +167,23 @@ ol
 	line-height: 200%
 }
 
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
 ol > li
 {
 	float: left;
-	width: 180px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+ol > li:hover
+{
+	background-color: #414141;
 }
 
 footer
