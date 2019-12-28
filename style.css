@@ -186,6 +186,37 @@ ol > li:hover
 	background-color: #414141;
 }
 
+ol > li > ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	display: none;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color: #525252;
+	position: relative;
+	z-index: 100;
+}
+
+ol > li > ul > li:last-child
+{
+	border-radius: 0 0 5px 5px;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #414141;
+}
+
 footer
 {
 	display: block;
