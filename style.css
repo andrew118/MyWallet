@@ -217,6 +217,19 @@ ol > li > ul > li:hover
 	background-color: #414141;
 }
 
+.content
+{
+	padding: 20px;
+	text-align: center;
+}
+
+#welcome
+{
+	font-size: 25px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
 footer
 {
 	display: block;
