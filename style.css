@@ -191,6 +191,11 @@ ol > li:hover
 	background-color: #414141;
 }
 
+ol > li:hover > a
+{
+	color: #36b03c;
+}
+
 ol > li > ul
 {
 	list-style-type: none;
@@ -220,6 +225,11 @@ ol > li > ul > li:last-child
 ol > li > ul > li:hover
 {
 	background-color: #414141;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #36b03c;
 }
 
 .content
