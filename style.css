@@ -76,9 +76,12 @@ header > p
 
 input[type=text],
 input[type=password],
-input[type=email]
+input[type=email],
+input[type=number],
+input[type=date]
 {
 	width: 300px;
+	height: 50px;
 	background-color: #efefef;
 	color: #666;
 	border: 2px solid #ddd;
@@ -92,7 +95,9 @@ input[type=email]
 
 input[type=text]:focus,
 input[type=password]:focus,
-input[type=email]:focus
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=date]:focus
 {
 	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
@@ -104,6 +109,7 @@ input[type=email]:focus
 input[type=submit]
 {
 	width: 300px;
+	height: 50px;
 	background-color: #36b03c;
 	font-size:20px;
 	color: white;
@@ -126,6 +132,34 @@ input[type=submit]:focus
 input[type=submit]:hover
 {
 	background-color: #37b93d;
+}
+
+input[type=button]
+{
+	width: 300px;
+	height: 50px;
+	background-color: #b0363c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=button]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=button]:hover
+{
+	background-color: #b9373d;
 }
 
 .description
@@ -236,6 +270,20 @@ ol > li > ul > li:hover > a
 {
 	padding: 20px;
 	text-align: center;
+}
+
+.form
+{
+	padding: 20px;
+	margin-top: 20px;
+	border-style: dashed;
+	border-radius: 10px;
+}
+
+label
+{
+	display: inline-block;
+	width: 150px;
 }
 
 #welcome
