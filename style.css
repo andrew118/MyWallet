@@ -337,6 +337,13 @@ input[type=radio]:checked + label
 	background-color:#e0e0e0;
 }
 
+.add_cancel
+{
+	padding-left: 88px;
+	padding-right: 88px;
+	float: left;
+}
+
 #welcome
 {
 	font-size: 25px;
