@@ -337,6 +337,16 @@ input[type=radio]:checked + label
 	background-color:#e0e0e0;
 }
 
+.first_label
+{
+	border-radius: 5px 0 0 5px;
+}
+
+.last_label
+{
+	border-radius: 0 5px 5px 0;
+}
+
 .add_cancel
 {
 	padding-left: 88px;
