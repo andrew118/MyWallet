@@ -288,7 +288,7 @@ ol > li > ul > li:hover > a
 label
 {
 	display: inline-block;
-	width: 150px;
+	min-width: 130px;
 }
 
 input[type=radio] 
