@@ -359,6 +359,41 @@ input[type=radio]:checked + label
 	padding: 2px;
 }
 
+table
+{
+	border-spacing: 0px;
+}
+
+th
+{
+	padding-top: 20px;
+}
+
+td
+{
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.date
+{
+	width: 100px;
+}
+
+.category
+{
+	width: 400px;
+	border-left: 1px dotted #f2f2f2;
+	border-right: 1px dotted #f2f2f2;
+	padding-left: 5px;
+}
+
+.money
+{
+	width: 100px;
+	padding-left: 5px;
+}
+
 #welcome
 {
 	font-size: 25px;
