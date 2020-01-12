@@ -354,6 +354,11 @@ input[type=radio]:checked + label
 	float: left;
 }
 
+.radio_group
+{
+	padding: 2px;
+}
+
 #welcome
 {
 	font-size: 25px;

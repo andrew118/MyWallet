@@ -30,8 +30,8 @@
 			<div class="desktop">
 				<nav>
 					<ol>
-						<li><a href="#"><i class="icon-money"></i>Dodaj przychód</a></li>
-						<li><a href="expanse.html"><i class="icon-basket"></i>Dodaj wydatek</a></li>
+						<li><a href="income.html"><i class="icon-money"></i>Dodaj przychód</a></li>
+						<li><a href="#"><i class="icon-basket"></i>Dodaj wydatek</a></li>
 						<li><a href="balance.html"><i class="icon-calendar"></i>Przeglądaj bilans</a>
 							<ul>
 								<li><a href="balance.html">Bierzący miesiąc</a></li>
@@ -47,7 +47,7 @@
 				
 				<article>
 					<div class="form">
-						<form action="add_income.php" method="post">
+						<form action="add_expanse.php" method="post">
 							<div>
 								<label for="money">Podaj kwotę</label>
 								<input type="number" step="0.01" id="money">
@@ -58,16 +58,81 @@
 							</div>
 							<div id="radios">
 								<fieldset>
+									<legend>Metoda płatności</legend>
+										<input type="radio" name="payment_method" id="pay_radio1" value="cash" checked>
+											<label for="pay_radio1" class="first_label">Gotówka</label>
+										
+										<input type="radio" name="payment_method" id="pay_radio2" value="debit_card">
+											<label for="pay_radio2">Karta debetowa</label>
+										
+										<input type="radio" name="payment_method" id="pay_radio3" value="credit_card">
+											<label for="pay_radio3" class="last_label">Karta kredytowa</label>						
+								</fieldset>
+								<fieldset>
 									<legend>Kategoria wydatku</legend>
-										<input type="radio" name="category" id="radio1" value="salary" checked>
-											<label for="radio1" class="first_label">Wynagrodzenie</label>
-										<input type="radio" name="category" id="radio2" value="interest">
-											<label for="radio2">Odsetki bankowe</label>
-										<input type="radio" name="category" id="radio3" value="allegro">
-											<label for="radio3">Sprzedaż na allegro</label>
-										<input type="radio" name="category" id="radio4" value="other">
-											<label for="radio4" class="last_label">Inne</label>
-										<input type="text" name="comment" placeholder="Komentarz">						
+									<div class="radio_group">
+										<input type="radio" name="category" id="radio1" value="food" checked>
+											<label for="radio1" class="first_label">Jedzenie</label>
+										
+										<input type="radio" name="category" id="radio2" value="accommodation">
+											<label for="radio2">Mieszkanie</label>
+										
+										<input type="radio" name="category" id="radio3" value="transportation">
+											<label for="radio3">Transport</label>
+										
+										<input type="radio" name="category" id="radio4" value="telecommunications">
+											<label for="radio4">Telekomunikacja</label>
+
+										<input type="radio" name="category" id="radio5" value="healthcare">
+											<label for="radio5" class="last_label">Ochrona zdrowia</label>
+									</div>
+									
+									<div class="radio_group">
+										<input type="radio" name="category" id="radio6" value="clothing">
+											<label for="radio6" class="first_label">Odzież</label>
+										
+										<input type="radio" name="category" id="radio7" value="hygiene">
+											<label for="radio7">Higiena</label>
+										
+										<input type="radio" name="category" id="radio8" value="children">
+											<label for="radio8">Dzieci</label>
+										
+										<input type="radio" name="category" id="radio9" value="entertainment">
+											<label for="radio9">Rozrywka</label>
+										
+										<input type="radio" name="category" id="radio10" value="trip">
+											<label for="radio10" class="last_label">Wycieczka</label>
+									</div>
+									
+									<div class="radio_group">
+										<input type="radio" name="category" id="radio11" value="training">
+											<label for="radio11" class="first_label">Szkolenia</label>
+											
+										<input type="radio" name="category" id="radio12" value="book">
+											<label for="radio12">Książki</label>
+										
+										<input type="radio" name="category" id="radio13" value="savings">
+											<label for="radio13">Oszczędności</label>
+										
+										<input type="radio" name="category" id="radio14" value="pension">
+											<label for="radio14">Emerytura</label>
+											
+										<input type="radio" name="category" id="radio15" value="debt">
+											<label for="radio15" class="last_label">Spłata długów</label>
+									</div>
+									
+									<div class="radio_group">	
+										<input type="radio" name="category" id="radio16" value="donation">
+											<label for="radio16" class="first_label">Darowizna</label>
+											
+										<input type="radio" name="category" id="radio17" value="other">
+											<label for="radio17" class="last_label">Inne</label>
+									</div>		
+									
+									<div>
+										<input type="text" name="comment" placeholder="Komentarz">
+									</div>
+										
 								</fieldset>
 							</div>
 							<div class="add_cancel"><input type="submit" value="Dodaj"></div>
@@ -79,7 +144,6 @@
 			</div>
 			
 		</main>
-			
 	
 		<footer>
 			2019 Strona wykonana przez &copy ANDREW
