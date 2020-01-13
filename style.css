@@ -366,7 +366,8 @@ input[type=radio]:checked + label
 	padding-top: 30px;
 }
 
-#sum_income
+#sum_income,
+#sum_expanses
 {
 	padding-left: 30px;
 }
