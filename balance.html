@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	
+	<meta charset="utf-8">
+	<title>MyWallet | Weź w garść swoje pieniądze już dziś</title>
+	<meta name="description" content="Aplikacja do prowadzenia budżetu osobistego lub domowego. Pieniądze pod kontrolą.">
+	<meta name="keywords" content="pieniądze, budżet, wydatki, kontrola, kasa, oszczędzanie, portfel on-line">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lobster&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+    
+</head>
+
+<body>
+	<div class="container">
+	
+		<header>
+			<h1>$ MyWallet $</h1>
+			<p>
+			<a href="https://www.filmweb.pl/film/Pieni%C4%85dze+to+nie+wszystko-2001-1168" class="motto" title="Dowiedz się więcej na Filwebie" target="_blank"><q>Piniondze to nie fszysko, ale fszysko bez piniendzy to nic</q></a>
+			</p>
+		</header>
+		
+		<main>
+			<div class="desktop">
+				<nav>
+					<ol>
+						<li><a href="income.html"><i class="icon-money"></i>Dodaj przychód</a></li>
+						<li><a href="expanse.html"><i class="icon-basket"></i>Dodaj wydatek</a></li>
+						<li><a href="balance.html"><i class="icon-calendar"></i>Przeglądaj bilans</a>
+							<ul>
+								<li><a href="balance.html">Bierzący miesiąc</a></li>
+								<li><a href="balance.html">Poprzedni miesiąc</a></li>
+								<li><a href="balance.html">Bierzący rok</a></li>
+								<li><a href="balance.html">Niestandardowy</a></li>
+							</ul>
+						</li>
+						<li><a href="settings.html"><i class="icon-conf"></i>Ustawienia</a></li>
+						<li><a href="index.html"><i class="icon-logout"></i>Wyloguj się</a></li>
+					</ol>
+				</nav>
+				
+				<article>
+					<div class="form">
+						<div style="float: left; text-align: left;">
+							<div></div><label for="begin">Początkowa data</label>
+							<input type="date" id="begin">
+						</div>
+						
+						<div style="float: right; text-align: right;">						
+							<label for="end">Końcowa data</label>
+							<input type="date" id="end">							
+						</div>
+						<div style="clear: both;"></div>
+						
+						<div>
+							<h1 class="summary" id="info">Świetnie zarządzasz finansami! Twój zysk: <span id="difference">3823.45</span> zł</h1>
+						</div>
+						
+						<!-- INCOMES -->
+						<div>
+							<h1 class="summary">Suma twoich przychodów w tym okresie: <span id="sum_income">5123.45</span> zł</h1>
+						</div>
+						
+						<table>
+							<tr>
+								<th>Data</th>
+								<th>Kategoria</th>
+								<th>Kwota</th>
+							</tr>
+							<tr>
+								<td class="date">01.01.2020</td>
+								<td class="category">Wynagrodzenie</td>
+								<td class="money">5000.01</td>
+							</tr>
+							<tr>
+								<td class="date">02.01.2020</td>
+								<td class="category">Odsetki</td>
+								<td class="money">0.12</td>
+							</tr>
+							<tr>
+								<td class="date">03.01.2020</td>
+								<td class="category">Sprzedaż na allegro</td>
+								<td class="money">123.32</td>
+							</tr>
+						</table>
+						
+						<!-- EXPANSES -->
+						<div>
+							<h1 class="summary">Suma twoich wydatków w tym okresie: <span id="sum_expanses">1300.00</span> zł</h1>
+						</div>
+						
+						<table>
+							<tr>
+								<th>Data</th>
+								<th>Kategoria</th>
+								<th>Kwota</th>
+							</tr>
+							<tr>
+								<td class="date">01.01.2020</td>
+								<td class="category">Mieszkanie</td>
+								<td class="money">1050.00</td>
+							</tr>
+							<tr>
+								<td class="date">07.01.2020</td>
+								<td class="category">Transport</td>
+								<td class="money">150.00</td>
+							</tr>
+							<tr>
+								<td class="date">15.01.2020</td>
+								<td class="category">Rozrywka</td>
+								<td class="money">100.00</td>
+							</tr>
+						</table>
+					</div>
+				</article>
+			</div>
+			
+		</main>
+			
+	
+		<footer>
+			2019 Strona wykonana przez &copy ANDREW
+		</footer>
+	
+	</div>
+
+</body>
+	
+</html>
