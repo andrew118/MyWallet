@@ -369,9 +369,15 @@ input[type=radio]:checked + label
 }
 
 #sum_income,
-#sum_expanses
+#sum_expanses,
+#difference
 {
 	padding-left: 30px;
+}
+
+#info
+{
+	color: #aaffaa;
 }
 
 table
