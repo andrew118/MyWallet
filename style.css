@@ -364,6 +364,8 @@ input[type=radio]:checked + label
 	font-size: 24px;
 	margin: 0;
 	padding-top: 30px;
+	padding-left: 167px;
+	padding-right: 167px;
 }
 
 #sum_income,
