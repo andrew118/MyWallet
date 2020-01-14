@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lobster&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
 </head>
 
@@ -59,12 +61,12 @@
 						<div style="clear: both;"></div>
 						
 						<div>
-							<h1 class="summary" id="info">Świetnie zarządzasz finansami! Twój zysk: <span id="difference">3823.45</span> zł</h1>
+							<h1 class="total" id="info">Świetnie zarządzasz finansami! Twój zysk: <span id="difference">3823.45</span> zł</h1>
 						</div>
-						
+							
 						<!-- INCOMES -->
 						<div>
-							<h1 class="summary">Suma twoich przychodów w tym okresie: <span id="sum_income">5123.45</span> zł</h1>
+							<h1 class="subtotal">Suma przychodów: <span id="sum_income">5123.45</span> zł</h1>
 						</div>
 						
 						<table>
@@ -77,22 +79,25 @@
 								<td class="date">01.01.2020</td>
 								<td class="category">Wynagrodzenie</td>
 								<td class="money">5000.01</td>
+								<td class="edit"><i class="icon-pencil-alt"></i></td>
 							</tr>
 							<tr>
 								<td class="date">02.01.2020</td>
 								<td class="category">Odsetki</td>
 								<td class="money">0.12</td>
+								<td class="edit"><i class="icon-pencil-alt"></i></td>
 							</tr>
 							<tr>
 								<td class="date">03.01.2020</td>
 								<td class="category">Sprzedaż na allegro</td>
 								<td class="money">123.32</td>
+								<td class="edit"><i class="icon-pencil-alt"></i></td>
 							</tr>
 						</table>
-						
+					
 						<!-- EXPANSES -->
 						<div>
-							<h1 class="summary">Suma twoich wydatków w tym okresie: <span id="sum_expanses">1300.00</span> zł</h1>
+							<h1 class="subtotal">Suma wydatków: <span id="sum_expanses">1300.00</span> zł</h1>
 						</div>
 						
 						<table>
@@ -105,21 +110,58 @@
 								<td class="date">01.01.2020</td>
 								<td class="category">Mieszkanie</td>
 								<td class="money">1050.00</td>
+								<td class="edit"><i class="icon-pencil-alt"></i></td>
 							</tr>
 							<tr>
 								<td class="date">07.01.2020</td>
 								<td class="category">Transport</td>
 								<td class="money">150.00</td>
+								<td class="edit"><i class="icon-pencil-alt"></i></td>
 							</tr>
 							<tr>
 								<td class="date">15.01.2020</td>
 								<td class="category">Rozrywka</td>
 								<td class="money">100.00</td>
+								<td class="edit"><i class="icon-pencil-alt"></i></td>
 							</tr>
 						</table>
+
+						<div id="piechart"></div>							
+		
+						<script type="text/javascript">
+						// Load google charts
+						google.charts.load('current', {'packages':['corechart']});
+						google.charts.setOnLoadCallback(drawChart);
+
+						// Draw the chart and set the chart values
+						function drawChart() {
+						  var data = google.visualization.arrayToDataTable([
+						  ['Wydatki', 'Kwota'],
+						  ['Mieszkanie', 1050.00],
+						  ['Transport', 150.00],
+						  ['Rozrywka', 100]
+						]);
+
+						  // Optional; add a title and set the width and height of the chart
+						  var options = {
+									chartArea: {
+										top: 5,
+										bottom: 5
+									},
+									is3D: 'true',
+									backgroundColor: '#6e6e6e',
+									legend: {position: 'right', alignment: 'center', textStyle: {color: '#efefef', fontSize: 16}}									
+								  };
+
+						  // Display the chart inside the <div> element with id="piechart"
+						  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+						  chart.draw(data, options);
+						}
+						</script>
+						
+
 					</div>
 				</article>
-			</div>
 			
 		</main>
 			
