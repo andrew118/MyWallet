@@ -291,6 +291,16 @@ label
 	min-width: 130px;
 }
 
+.longer_label
+{
+	min-width: 200px;
+}
+
+.center
+{
+	text-align: center;
+}
+
 input[type=radio] 
 {
 	display:none;

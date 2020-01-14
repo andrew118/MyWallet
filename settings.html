@@ -46,7 +46,29 @@
 				</nav>
 				
 				<article>
+					<h1 id class="total">Zmień swoje dane</h1>
+					<div class="form">
+						
+						<form action="register.php" method="post">
+							<div>
+								<label for="login" class="longer_label">Podaj nowy login</label>
+								<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" id="login">
+							</div>
+							<div>
+							<label for="password" class="longer_label">Podaj e hasło</label>
+								<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" id="password">
+							</div>
+							<div>
+								<label for="email" class="longer_label">Podaj nowy e-mail</label>
+								<input type="email" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" id="e-mail">
+							</div>
+							<div class="center">
+								<input type="submit" value="Zapisz">
+							</div>
+							
+						</form>
 					
+					</div>
 				</article>
 			</div>
 			
