@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lobster&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
 </head>
 
@@ -96,7 +98,6 @@
 							</table>
 						</div>
 						<div class="right_side">
-							<div id="piechart"></div>
 						</div>
 						<div style="clear: both;"></div>
 						
@@ -132,7 +133,43 @@
 								</tr>
 							</table>
 						</div>
+						<div class="right_side">
+							<div id="piechart"></div>
+							
+							
+
+							<script type="text/javascript">
+							// Load google charts
+							google.charts.load('current', {'packages':['corechart']});
+							google.charts.setOnLoadCallback(drawChart);
+
+							// Draw the chart and set the chart values
+							function drawChart() {
+							  var data = google.visualization.arrayToDataTable([
+							  ['Wydatki', 'Kwota'],
+							  ['Mieszkanie', 1050.00],
+							  ['Transport', 150.00],
+							  ['Rozrywka', 100]
+							]);
+
+							  // Optional; add a title and set the width and height of the chart
+							  var options = {chartArea: {
+										left: 5,
+										top: 5,
+										width: 500,
+										height: 500
+									  }
+									  };
+
+							  // Display the chart inside the <div> element with id="piechart"
+							  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+							  chart.draw(data, options);
+							}
+							</script>
+							
+						</div>
 						<div style="clear: both;"></div>
+
 					</div>
 				</article>
 			</div>

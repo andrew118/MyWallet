@@ -371,6 +371,12 @@ input[type=radio]:checked + label
 	width: 430px;
 }
 
+#piechart
+{
+	width: 380px;
+	heigth: 400px;
+}
+
 .total
 {
 	font-size: 24px;
