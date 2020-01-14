@@ -359,11 +359,16 @@ input[type=radio]:checked + label
 	padding: 2px;
 }
 
-.left_side,
-.right_side
+.left_side
 {
 	float: left;
 	width: 526px;
+}
+
+.right_side
+{
+	float: left;
+	width: 430px;
 }
 
 .total
