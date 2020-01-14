@@ -46,29 +46,139 @@
 				</nav>
 				
 				<article>
-					<h1 id class="total">Zmień swoje dane</h1>
-					<div class="form">
+					<section>
+						<h1 id class="total">Zmień swoje dane</h1>
+						<div class="form">
 						
-						<form action="register.php" method="post">
-							<div>
-								<label for="login" class="longer_label">Podaj nowy login</label>
-								<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" id="login">
-							</div>
-							<div>
-							<label for="password" class="longer_label">Podaj e hasło</label>
-								<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" id="password">
-							</div>
-							<div>
-								<label for="email" class="longer_label">Podaj nowy e-mail</label>
-								<input type="email" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" id="e-mail">
-							</div>
-							<div class="center">
-								<input type="submit" value="Zapisz">
-							</div>
+							<form action="change_presonal_info.php" method="post">
+								<div>
+									<label for="login" class="longer_label">Podaj nowy login</label>
+									<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" id="login">
+								</div>
+								<div>
+								<label for="password" class="longer_label">Podaj e hasło</label>
+									<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" id="password">
+								</div>
+								<div>
+									<label for="email" class="longer_label">Podaj nowy e-mail</label>
+									<input type="email" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" id="e-mail">
+								</div>
+								<div class="center">
+									<input type="submit" value="Zapisz">
+								</div>
 							
-						</form>
+							</form>
 					
-					</div>
+						</div>
+					</section>
+					
+					<section>
+						<h1 id class="total">Edytuj kategorie przychodów i wydatków</h1>
+						<div class="form">
+						
+							<form action="change_categories.php" method="post">
+								<div>
+									<fieldset>
+										<legend>Wybierz kategorie przychodów do usunięcia</legend>
+											<label>
+												<input type="checkbox" name="income[]" value="1"> Wynagrodzenie
+											</label>
+											
+											<label>
+												<input type="checkbox" name="income[]" value="2"> Odsetki bankowe
+											</label>
+											
+											<label>
+												<input type="checkbox" name="income[]" value="3"> Sprzedaż na allegro
+											</label>
+					
+									</fieldset>
+								</div>
+								
+								<div>
+									<fieldset>
+										<legend>Wybierz kategorie wydatków do usunięcia</legend>
+											<label>
+												<input type="checkbox" name="expanse[]" value="1"> Jedzenie
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="2"> Mieszkanie
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="3"> Transport
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="4"> Telekomunikacja
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="5"> Ochrona zdrowia
+											</label>											
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="6"> Odzież
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="7"> Higiena
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="8"> Dzieci
+											</label>
+
+											<label>
+												<input type="checkbox" name="expanse[]" value="9"> Rozrywka
+											</label>
+
+											<label>
+												<input type="checkbox" name="expanse[]" value="10"> Wycieczka
+											</label>
+
+											<label>
+												<input type="checkbox" name="expanse[]" value="11"> Szkolenia
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="12"> Książki
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="13"> Oszczędności
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="14"> Emerytura
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="15"> Spłata długów
+											</label>
+											
+											<label>
+												<input type="checkbox" name="expanse[]" value="16"> Darowizna
+											</label>
+									</fieldset>
+								</div>
+								
+								<div>
+								
+								</div>
+								<div>
+									
+								</div>
+								<div class="center">
+									<input type="submit" value="Zapisz">
+								</div>
+							
+							</form>
+					
+						</div>
+					</section>
+					
 				</article>
 			</div>
 			
