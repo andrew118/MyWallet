@@ -59,70 +59,80 @@
 						<div style="clear: both;"></div>
 						
 						<div>
-							<h1 class="summary" id="info">Świetnie zarządzasz finansami! Twój zysk: <span id="difference">3823.45</span> zł</h1>
+							<h1 class="total" id="info">Świetnie zarządzasz finansami! Twój zysk: <span id="difference">3823.45</span> zł</h1>
 						</div>
 						
-						<!-- INCOMES -->
-						<div>
-							<h1 class="summary">Suma twoich przychodów w tym okresie: <span id="sum_income">5123.45</span> zł</h1>
+						<div class="left_side">
+							
+							<!-- INCOMES -->
+							<div>
+								<h1 class="subtotal">Suma przychodów: <span id="sum_income">5123.45</span> zł</h1>
+							</div>
+							
+							<table>
+								<tr>
+									<th>Data</th>
+									<th>Kategoria</th>
+									<th>Kwota</th>
+								</tr>
+								<tr>
+									<td class="date">01.01.2020</td>
+									<td class="category">Wynagrodzenie</td>
+									<td class="money">5000.01</td>
+									<td class="edit"><i class="icon-pencil-alt"></i></td>
+								</tr>
+								<tr>
+									<td class="date">02.01.2020</td>
+									<td class="category">Odsetki</td>
+									<td class="money">0.12</td>
+									<td class="edit"><i class="icon-pencil-alt"></i></td>
+								</tr>
+								<tr>
+									<td class="date">03.01.2020</td>
+									<td class="category">Sprzedaż na allegro</td>
+									<td class="money">123.32</td>
+									<td class="edit"><i class="icon-pencil-alt"></i></td>
+								</tr>
+							</table>
 						</div>
-						
-						<table>
-							<tr>
-								<th>Data</th>
-								<th>Kategoria</th>
-								<th>Kwota</th>
-							</tr>
-							<tr>
-								<td class="date">01.01.2020</td>
-								<td class="category">Wynagrodzenie</td>
-								<td class="money">5000.01</td>
-								<td class="edit"><i class="icon-pencil-alt"></i></td>
-							</tr>
-							<tr>
-								<td class="date">02.01.2020</td>
-								<td class="category">Odsetki</td>
-								<td class="money">0.12</td>
-								<td class="edit"><i class="icon-pencil-alt"></i></td>
-							</tr>
-							<tr>
-								<td class="date">03.01.2020</td>
-								<td class="category">Sprzedaż na allegro</td>
-								<td class="money">123.32</td>
-								<td class="edit"><i class="icon-pencil-alt"></i></td>
-							</tr>
-						</table>
-						
-						<!-- EXPANSES -->
-						<div>
-							<h1 class="summary">Suma twoich wydatków w tym okresie: <span id="sum_expanses">1300.00</span> zł</h1>
+						<div class="right_side">
+							<div id="piechart"></div>
 						</div>
+						<div style="clear: both;"></div>
 						
-						<table>
-							<tr>
-								<th>Data</th>
-								<th>Kategoria</th>
-								<th>Kwota</th>
-							</tr>
-							<tr>
-								<td class="date">01.01.2020</td>
-								<td class="category">Mieszkanie</td>
-								<td class="money">1050.00</td>
-								<td class="edit"><i class="icon-pencil-alt"></i></td>
-							</tr>
-							<tr>
-								<td class="date">07.01.2020</td>
-								<td class="category">Transport</td>
-								<td class="money">150.00</td>
-								<td class="edit"><i class="icon-pencil-alt"></i></td>
-							</tr>
-							<tr>
-								<td class="date">15.01.2020</td>
-								<td class="category">Rozrywka</td>
-								<td class="money">100.00</td>
-								<td class="edit"><i class="icon-pencil-alt"></i></td>
-							</tr>
-						</table>
+						<div class="left_side">
+							<!-- EXPANSES -->
+							<div>
+								<h1 class="subtotal">Suma wydatków: <span id="sum_expanses">1300.00</span> zł</h1>
+							</div>
+							
+							<table>
+								<tr>
+									<th>Data</th>
+									<th>Kategoria</th>
+									<th>Kwota</th>
+								</tr>
+								<tr>
+									<td class="date">01.01.2020</td>
+									<td class="category">Mieszkanie</td>
+									<td class="money">1050.00</td>
+									<td class="edit"><i class="icon-pencil-alt"></i></td>
+								</tr>
+								<tr>
+									<td class="date">07.01.2020</td>
+									<td class="category">Transport</td>
+									<td class="money">150.00</td>
+									<td class="edit"><i class="icon-pencil-alt"></i></td>
+								</tr>
+								<tr>
+									<td class="date">15.01.2020</td>
+									<td class="category">Rozrywka</td>
+									<td class="money">100.00</td>
+									<td class="edit"><i class="icon-pencil-alt"></i></td>
+								</tr>
+							</table>
+						</div>
+						<div style="clear: both;"></div>
 					</div>
 				</article>
 			</div>
