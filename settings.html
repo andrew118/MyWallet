@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	
+	<meta charset="utf-8">
+	<title>MyWallet | Weź w garść swoje pieniądze już dziś</title>
+	<meta name="description" content="Aplikacja do prowadzenia budżetu osobistego lub domowego. Pieniądze pod kontrolą.">
+	<meta name="keywords" content="pieniądze, budżet, wydatki, kontrola, kasa, oszczędzanie, portfel on-line">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lobster&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+    
+</head>
+
+<body>
+	<div class="container">
+	
+		<header>
+			<h1>$ MyWallet $</h1>
+			<p>
+			<a href="https://www.filmweb.pl/film/Pieni%C4%85dze+to+nie+wszystko-2001-1168" class="motto" title="Dowiedz się więcej na Filwebie" target="_blank"><q>Piniondze to nie fszysko, ale fszysko bez piniendzy to nic</q></a>
+			</p>
+		</header>
+		
+		<main>
+			<div class="desktop">
+				<nav>
+					<ol>
+						<li><a href="income.html"><i class="icon-money"></i>Dodaj przychód</a></li>
+						<li><a href="expanse.html"><i class="icon-basket"></i>Dodaj wydatek</a></li>
+						<li><a href="balance.html"><i class="icon-calendar"></i>Przeglądaj bilans</a>
+							<ul>
+								<li><a href="balance.html">Bierzący miesiąc</a></li>
+								<li><a href="balance.html">Poprzedni miesiąc</a></li>
+								<li><a href="balance.html">Bierzący rok</a></li>
+								<li><a href="balance.html">Niestandardowy</a></li>
+							</ul>
+						</li>
+						<li><a href="settings.html"><i class="icon-conf"></i>Ustawienia</a></li>
+						<li><a href="index.html"><i class="icon-logout"></i>Wyloguj się</a></li>
+					</ol>
+				</nav>
+				
+				<article>
+					<section>
+						<h1 id class="total">Zmień swoje dane</h1>
+						<div class="form">
+						
+							<form action="change_presonal_info.php" method="post">
+								<div>
+									<label for="login" class="longer_label">Podaj nowy login</label>
+									<input type="text" id="login">
+								</div>
+								<div>
+								<label for="password" class="longer_label">Podaj nowe hasło</label>
+									<input type="password" id="password">
+								</div>
+								<div>
+									<label for="email" class="longer_label">Podaj nowy e-mail</label>
+									<input type="email" id="e-mail">
+								</div>
+								<div class="center">
+									<input type="submit" value="Zapisz">
+								</div>
+							
+							</form>
+					
+						</div>
+					</section>
+					
+					<section>
+						<h1 id class="total">Edytuj kategorie przychodów i wydatków</h1>
+						<div class="form">
+						
+							<form action="change_categories.php" method="post">
+								<div>
+									<fieldset>
+										<legend>Wybierz kategorie przychodów do usunięcia</legend>
+											<label>
+												<input type="checkbox" name="income[]" value="1"> Wynagrodzenie
+											</label>
+											
+											<label>
+												<input type="checkbox" name="income[]" value="2"> Odsetki bankowe
+											</label>
+											
+											<label>
+												<input type="checkbox" name="income[]" value="3"> Sprzedaż na allegro
+											</label>
+					
+									</fieldset>
+								</div>
+								
+								<div>
+									<fieldset>
+										<legend>Wybierz kategorie wydatków do usunięcia</legend>
+											<div class="col">
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="1"> Jedzenie
+												</label></div>
+											
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="2"> Mieszkanie
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="3"> Transport
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="4"> Telekomunikacja
+												</label></div>
+											</div>
+											
+											<div class="col">
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="5"> Ochrona zdrowia
+												</label></div>											
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="6"> Odzież
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="7"> Higiena
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="8"> Dzieci
+												</label></div>
+											</div>
+
+											<div class="col">
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="9"> Rozrywka
+												</label></div>
+
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="10"> Wycieczka
+												</label></div>
+
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="11"> Szkolenia
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="12"> Książki
+												</label></div>
+											</div>
+											
+											<div class="col">
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="13"> Oszczędności
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="14"> Emerytura
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="15"> Spłata długów
+												</label></div>
+												
+												<div><label>
+													<input type="checkbox" name="expanse[]" value="16"> Darowizna
+												</label></div>
+											</div>
+									</fieldset>
+								</div>
+								
+								<br />
+								
+								<div>
+									<label for="income" class="longer_label">Dodaj kategorię przychodu</label>
+									<input type="text" id="income">
+								</div>
+
+								<div>
+									<label for="expanse" class="longer_label">Dodaj kategorię wydatku</label>
+									<input type="text" id="expanse">
+								</div>
+
+								<div class="center">
+									<input type="submit" value="Zapisz">
+								</div>
+							
+							</form>
+					
+						</div>
+					</section>
+					
+				</article>
+			</div>
+			
+		</main>
+			
+	
+		<footer>
+			2019 Strona wykonana przez &copy ANDREW
+		</footer>
+	
+	</div>
+
+</body>
+	
+</html>
