@@ -285,6 +285,12 @@ ol > li > ul > li:hover > a
 	text-align: center;
 }
 
+legend
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
 label
 {
 	display: inline-block;
@@ -293,7 +299,7 @@ label
 
 .longer_label
 {
-	min-width: 200px;
+	min-width: 210px;
 }
 
 .center
