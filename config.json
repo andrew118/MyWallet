@@ -35,6 +35,12 @@
       "css": "basket",
       "code": 59397,
       "src": "modernpics"
+    },
+    {
+      "uid": "eedb189bc6326c685d83627f78e1c9de",
+      "css": "pencil-alt",
+      "code": 59392,
+      "src": "iconic"
     }
   ]
 }
