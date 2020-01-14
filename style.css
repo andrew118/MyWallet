@@ -301,6 +301,12 @@ label
 	text-align: center;
 }
 
+.col
+{
+	display: inline-block;
+	margin: 0 10px;
+}
+
 input[type=radio] 
 {
 	display:none;
