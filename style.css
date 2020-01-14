@@ -415,6 +415,25 @@ td
 	padding-left: 5px;
 }
 
+.edit
+{
+	border: none;
+}
+
+tr > td > i
+{
+	display: none;
+}
+tr:hover > td > i
+{
+	display: initial;
+}
+
+.edit td:hover
+{
+	display: table-cell;
+}
+
 #welcome
 {
 	font-size: 25px;
