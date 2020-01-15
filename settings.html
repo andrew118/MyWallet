@@ -8,9 +8,9 @@
 	<meta name="description" content="Aplikacja do prowadzenia budżetu osobistego lub domowego. Pieniądze pod kontrolą.">
 	<meta name="keywords" content="pieniądze, budżet, wydatki, kontrola, kasa, oszczędzanie, portfel on-line">
 	
-	<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	
-	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lobster&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700%7CLobster&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
     
@@ -20,7 +20,7 @@
 	<div class="container">
 	
 		<header>
-			<h1>$ MyWallet $</h1>
+			<div class="logo">$ MyWallet $</div>
 			<p>
 			<a href="https://www.filmweb.pl/film/Pieni%C4%85dze+to+nie+wszystko-2001-1168" class="motto" title="Dowiedz się więcej na Filwebie" target="_blank"><q>Piniondze to nie fszysko, ale fszysko bez piniendzy to nic</q></a>
 			</p>
@@ -46,8 +46,9 @@
 				</nav>
 				
 				<article>
+					<h1>Dostosuj aplikację <span id="my_wallet">MyWallet</span> do Twoich potrzeb</h1>
 					<section>
-						<h1 id class="total">Zmień swoje dane</h1>
+						<h2 class="total">Zmień swoje dane</h2>
 						<div class="form">
 						
 							<form action="change_presonal_info.php" method="post">
@@ -61,7 +62,7 @@
 								</div>
 								<div>
 									<label for="email" class="longer_label">Podaj nowy e-mail</label>
-									<input type="email" id="e-mail">
+									<input type="email" id="email">
 								</div>
 								<div class="center">
 									<input type="submit" value="Zapisz">
@@ -73,7 +74,7 @@
 					</section>
 					
 					<section>
-						<h1 id class="total">Edytuj kategorie przychodów i wydatków</h1>
+						<h2 class="total">Edytuj kategorie przychodów i wydatków</h2>
 						<div class="form">
 						
 							<form action="change_categories.php" method="post">
@@ -200,7 +201,7 @@
 			
 	
 		<footer>
-			2019 Strona wykonana przez &copy ANDREW
+			2019 Strona wykonana przez &copy; ANDREW
 		</footer>
 	
 	</div>

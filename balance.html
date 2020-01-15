@@ -8,13 +8,13 @@
 	<meta name="description" content="Aplikacja do prowadzenia budżetu osobistego lub domowego. Pieniądze pod kontrolą.">
 	<meta name="keywords" content="pieniądze, budżet, wydatki, kontrola, kasa, oszczędzanie, portfel on-line">
 	
-	<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	
-	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Lobster&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700%7CLobster&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
     
 </head>
 
@@ -22,7 +22,7 @@
 	<div class="container">
 	
 		<header>
-			<h1>$ MyWallet $</h1>
+			<div class="logo">$ MyWallet $</div>
 			<p>
 			<a href="https://www.filmweb.pl/film/Pieni%C4%85dze+to+nie+wszystko-2001-1168" class="motto" title="Dowiedz się więcej na Filwebie" target="_blank"><q>Piniondze to nie fszysko, ale fszysko bez piniendzy to nic</q></a>
 			</p>
@@ -48,6 +48,8 @@
 				</nav>
 				
 				<article>
+					<h1>Sprawdź bilans w wybranym okresie czasu</h1>
+					
 					<div class="form">
 						<div style="float: left; text-align: left;">
 							<div></div><label for="begin">Początkowa data</label>
@@ -128,7 +130,7 @@
 
 						<div id="piechart"></div>							
 		
-						<script type="text/javascript">
+						<script>
 						// Load google charts
 						google.charts.load('current', {'packages':['corechart']});
 						google.charts.setOnLoadCallback(drawChart);
@@ -162,12 +164,12 @@
 
 					</div>
 				</article>
-			
+			</div>
 		</main>
 			
 	
 		<footer>
-			2019 Strona wykonana przez &copy ANDREW
+			2019 Strona wykonana przez &copy; ANDREW
 		</footer>
 	
 	</div>
